@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+        /* Estilo para o navegador superior móvel */
+        #navegador-superior {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #681616;
+            padding: 10px;
+            z-index: 2;
+        }
+
+        #navegador-superior button {
+            background-color: #904c4c;
+            color: #fff;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border: none;
+        }
+
+        #navegador-superior button:hover {
+            background-color: #444;
+        }
+
+        /* Estilo para a estrutura principal */
+        #conteudo {
+            padding-top: 60px; /* Deve ser maior que a altura do navegador superior */
+            display: flex;
+        }
+
+        /* Estilo para o menu lateral esquerdo */
+        #menu-lateral-esquerdo {
+            width: 300px;
+            background-color: #eee;
+            height: 100vh;
+        }
+
+        /* Estilo para o conteúdo */
+        #conteudo-principal {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        /* Estilo para a galeria responsiva */
+        #galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        #galeria img {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        /* Estilo para o menu lateral direito */
+        #menu-lateral-direito {
+            width: 200px;
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        /* Estilo para o rodapé */
+        #rodape {
+            text-align: center;
+            padding: 20px;
+            background-color: #352323;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegador Superior Móvel -->
+    <div id="navegador-superior">
+        <button>Botão 1</button>
+        <button>Botão 2</button>
+        <button>Botão 3</button>
+        <button>Botão 4</button>
+    </div>
+
+    <!-- Estrutura Principal -->
+    <div id="conteudo">
+        <!-- Menu Lateral Esquerdo -->
+        <div id="menu-lateral-esquerdo">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <!-- Adicione mais links aqui -->
+            </ul>
+        </div>
+
+        <!-- Conteúdo -->
+        <div id="conteudo-principal">
+            <!-- Galeria Responsiva -->
+            <div id="galeria">
+                <img src="cat1.jpg" alt="Imagem 1">
+                <img src="cat2.jpg" alt="Imagem 2">
+                <img src="cat3.jpg" alt="Imagem 3">
+                <img src="cat4.jpg" alt="Imagem 4">
+                <img src="cat5.jpg" alt="Imagem 5">
+                <img src="cat6.jpg" alt="Imagem 6">
+                <img src="cat7.jpg" alt="Imagem 7">
+                <img src="cat8.jpg" alt="Imagem 8">
+                <img src="cat9.jpg" alt="Imagem 9">
+            </div>
+        </div>
+
+        <!-- Menu Lateral Direito -->
+        <div id="menu-lateral-direito">
+            <!-- Conteúdo do Menu Lateral Direito -->
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="rodape">
+        &copy; 2023 Cursed Cats por Arusha Gomes e Caio Caminha
+    </div>
+</body>
+</html>
